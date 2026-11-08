@@ -1,16 +1,5 @@
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-
-import {
-  Mail,
-  Network,
-  GitBranch,
-  Activity,
-} from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Mail, Network, GitBranch, Activity } from "lucide-react";
 
 const metrics = [
   {
@@ -43,9 +32,7 @@ export default function DashboardPage() {
   return (
     <div className="space-y-6">
       <div>
-        <h2 className="text-2xl font-bold tracking-tight">
-          Overview
-        </h2>
+        <h2 className="text-2xl font-bold tracking-tight">Overview</h2>
         <p className="text-muted-foreground">
           Monitor your messaging activity and resources.
         </p>
@@ -66,9 +53,7 @@ export default function DashboardPage() {
               </CardHeader>
 
               <CardContent>
-                <div className="text-2xl font-bold">
-                  {metric.value}
-                </div>
+                <div className="text-2xl font-bold">{metric.value}</div>
 
                 <p className="text-xs text-muted-foreground">
                   {metric.description}

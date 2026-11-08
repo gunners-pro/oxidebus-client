@@ -19,7 +19,11 @@ const navigation = [
     items: [
       { label: "Overview", href: "/dashboard", icon: LayoutDashboard },
       { label: "Topics", href: "/dashboard/topics", icon: Network },
-      { label: "Subscriptions", href: "/dashboard/subscriptions", icon: GitBranch },
+      {
+        label: "Subscriptions",
+        href: "/dashboard/subscriptions",
+        icon: GitBranch,
+      },
       { label: "Messages", href: "/dashboard/messages", icon: Mail },
     ],
   },

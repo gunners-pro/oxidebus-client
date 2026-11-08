@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -16,20 +15,14 @@ export default function Home() {
       <Card className="w-full max-w-md">
         <CardHeader>
           <CardTitle>Welcome to OxideBus</CardTitle>
-          <CardDescription>
-            Sign in to access your account.
-          </CardDescription>
+          <CardDescription>Sign in to access your account.</CardDescription>
         </CardHeader>
 
         <CardContent>
           <form className="space-y-4">
             <div className="space-y-2">
               <Label htmlFor="email">Email</Label>
-              <Input
-                id="email"
-                type="email"
-                placeholder="you@example.com"
-              />
+              <Input id="email" type="email" placeholder="you@example.com" />
             </div>
 
             <div className="space-y-2">
