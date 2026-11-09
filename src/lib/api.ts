@@ -7,11 +7,13 @@ if (!API_URL) {
 export async function apiRequest<T>(
   endpoint: string,
   options?: RequestInit,
+  token?: string,
 ): Promise<T> {
   const response = await fetch(`${API_URL}${endpoint}`, {
     ...options,
     headers: {
       "Content-Type": "application/json",
+      ...(token && { Authorization: `Bearer ${token}` }),
       ...options?.headers,
     },
     cache: "no-store",
