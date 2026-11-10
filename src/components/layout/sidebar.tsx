@@ -11,6 +11,7 @@ import {
   ChartNoAxesCombined,
   Settings,
   Layers,
+  Building2,
 } from "lucide-react";
 
 const navigation = [
@@ -18,6 +19,11 @@ const navigation = [
     title: "WORKSPACE",
     items: [
       { label: "Overview", href: "/dashboard", icon: LayoutDashboard },
+      {
+        label: "Tenants",
+        href: "/dashboard/tenants",
+        icon: Building2,
+      },
       { label: "Topics", href: "/dashboard/topics", icon: Network },
       {
         label: "Subscriptions",
